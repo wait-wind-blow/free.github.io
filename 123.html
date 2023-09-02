@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>幸运大转盘</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: url(./wheel-bodybg.png);
+            background-size: 100% 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wheel {
+            width: 800px;
+            height: 800px;
+            position: relative;
+            background-image: url(./wheel-bg.png);
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wheel-light {
+            background-image: url(./wheel-bg2.png) !important;
+        }
+
+        #wheelCanvas {
+            width: 700px;
+            height: 700px;
+
+        }
+
+        .transition {
+            transition: all 2s;
+        }
+
+        .pointer {
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+            background-image: url(./wheel-pointer.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            border: none;
+            outline: none;
+        }
+
+        .pointer-animation {
+            animation: scale 1s infinite linear alternate;
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wheel">
+            <canvas id="wheelCanvas" width="600px" height="600px"></canvas>
+            <button class="pointer pointer-animation" id="getAward"></button>
+        </div>
+    </div>
+</body>
+<script>
+    //抽奖转盘
+    var turnWheel = {
+        reaward: [
+            { name: '1.绪论，串，数组', icon: 'https://mdhw.oss-cn-hangzhou.aliyuncs.com/signAward/1649132281714_4Y5c6zXd.png' },
+            { name: '2.线性表', icon: '' },
+            { name: '3.栈，队列', icon: 'https://mdhw.oss-cn-hangzhou.aliyuncs.com/signAward/1649132281714_4Y5c6zXd.png' },
+            { name: '4.查找', icon: '' },
+            { name: '5.排序', icon: 'https://mdhw.oss-cn-hangzhou.aliyuncs.com/signAward/1649132281714_4Y5c6zXd.png' },
+        ], //转盘奖品
+        colors: [], //转盘奖品区块对应背景颜色
+        fontColor: '#f00', //转盘奖品字体颜色
+        radius: 300, //转盘半径
+        textRadius: 320, //转盘奖品位置距离圆心的距离
+    };
+
+    var timer = null;
+    var turning = false;
+    var wheelCanvas = document.getElementById("wheelCanvas");
+
+    turnWheel.reaward = turnWheel.reaward.map(d => {
+        let img = new Image();
+        img.src = d.icon;
+        d.icon = img
+        return d
+    })
+    turnWheel.colors = [
+        "#eecffe",
+        "#FFFFFF",
+        "#eecffe",
+        "#FFFFFF",
+        "#eecffe",
+        "#FFFFFF",
+    ];
+    window.onload = function () {
+
+        drawWheelCanvas('wheelCanvas', turnWheel);
+        var getAward = document.getElementById("getAward");
+        var index = 0; // 中奖将品的数组下标
+        getAward.addEventListener("click", function () {
+            if (turning) {
+                return;
+            }
+            turning = true;
+            index = Math.floor(Math.random() * turnWheel.reaward.length);
+            wheelCanvas.classList.add("transition");
+            twinkle(() => {
+                alert('今天要复习：' + index);
+            });
+            rotateWheel(index, turnWheel.reaward.length)
+        })
+    };
+
+    // 转盘灯闪烁 callback为抽奖结果后执行函数
+    function twinkle(callback) {
+        let wheel = document.querySelector('.wheel');
+        let pointer = document.querySelector('.pointer');
+
+        pointer.classList.remove('pointer-animation');
+        timer = setInterval(() => {
+            wheel.classList.toggle('wheel-light');
+        }, 200);
+        setTimeout(() => {
+            turning = false;
+            wheelCanvas.classList.remove('transition');
+            wheel.classList.remove('wheel-light');
+            pointer.classList.add('pointer-animation');
+            wheelCanvas.style.transform = 'rotate(0deg)';
+            timer && clearInterval(timer);
+
+            typeof callback === 'function' && callback();
+
+        }, 2000);
+    }
+    // 旋转转盘 (index:中奖将品的数组下标)
+    function rotateWheel(awardIndex, awardCount) {
+        let baseAngle = 360 / awardCount;
+        let rotateRound = 360 * 5; // 每次旋转5圈
+        wheelCanvas.style.transform = 'rotate(' + ((270 - ((baseAngle / 2) + baseAngle * awardIndex)) + rotateRound) + 'deg)';
+    }
+    // 绘制转盘
+    function drawWheelCanvas(canvasId, turnWheel) {
+        let canvas = document.getElementById(canvasId);
+        let baseAngle = Math.PI * 2 / (turnWheel.reaward.length);
+        let ctx = canvas.getContext("2d");
+        let canvasW = canvas.width; // 画板的高度
+        let canvasH = canvas.height; // 画板的宽度
+        ctx.fillStyle = "#fff000";
+        ctx.clearRect(0, 0, canvasW, canvasH);//去掉背景默认的黑色
+        ctx.font = '26px Microsoft YaHei';
+        for (let index = 0; index < turnWheel.reaward.length; index++) {
+            let angle = index * baseAngle;
+            let rewardName = turnWheel.reaward[index].name;
+            let translateX = canvasW * 0.5 + Math.cos(angle + baseAngle / 2) * turnWheel.textRadius;
+            let translateY = canvasH * 0.5 + Math.sin(angle + baseAngle / 2) * turnWheel.textRadius;
+            ctx.fillStyle = turnWheel.colors[index];
+            ctx.beginPath();
+            ctx.arc(canvasW * 0.5, canvasH * 0.5, turnWheel.radius, angle, angle + baseAngle, false);
+            ctx.lineTo(canvasW * 0.5, canvasH * 0.5);
+            ctx.fill();
+            ctx.save();
+            ctx.fillStyle = turnWheel.fontColor;
+            ctx.translate(translateX, translateY);
+            ctx.rotate(angle + baseAngle / 2 + Math.PI / 2);
+            ctx.fillText(rewardName, -ctx.measureText(rewardName).width / 2, 100);
+            //添加对应图标
+            if (turnWheel.reaward[index] && turnWheel.reaward[index].icon) {
+
+                ctx.drawImage(turnWheel.reaward[index].icon, -40, 140, 80, 80);
+            }
+
+            ctx.restore(); //很关键
+        }
+    }
+</script>
+
+</html>
