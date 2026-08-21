@@ -1,0 +1,15 @@
+{
+  "version": "0.3.6",
+  "publishedAt": "2026-08-21T15:58:51.3452872+08:00",
+  "notes": [
+    "Updater now handles Chinese install paths with UTF-8 BOM PowerShell scripts",
+    "Updater closes only duplicate Chengda AI instances using the same executable path",
+    "Updater verifies the installed SHA-256, keeps a rollback copy, logs failures and confirms restart",
+    "The app now prevents duplicate instances and focuses the existing practice window",
+    "Mock exam and interview pages are hosted on GitHub Pages",
+    "Update manifests and packages are hosted on GitHub while license validation remains on the server"
+  ],
+  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.3.6-windows-x64.exe",
+  "sha256": "803010400005a96ea616c1ade63381b718325dc435d1cedeb1dec932a3302a67",
+  "size": 6260736
+}
