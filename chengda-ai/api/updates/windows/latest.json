@@ -1,14 +1,14 @@
 {
-    "version":  "0.3.8",
-    "publishedAt":  "2026-08-21T17:09:16.3494504+08:00",
+    "version":  "0.4.3",
+    "publishedAt":  "2026-08-23T23:52:34.6115892+08:00",
     "notes":  [
-                  "Practice windows now dedicate the main body to the AI answer and no longer show a manual input field",
-                  "The redundant practice-window heading was removed to provide more answer space",
-                  "Hover actions keep their labels fixed and no longer display changing arming text or browser tooltips",
-                  "Practice action buttons are smaller at normal and compact window sizes",
-                  "The real exam window remains available as the live Appearance preview"
+                  "新增邀请奖励：提交视频链接与发布满 24 小时后的评论区 @等风吹截图，审核通过后每人可领取一次三天激活码",
+                  "手机发码助手新增服务器管理员口令登录，并可在手机端配置硅基流动视觉模型进行初审",
+                  "邀请截图优先保留原图，手机审核页支持点击全屏、按钮缩放和双指缩放",
+                  "邀请截图保存满七天后自动清理，同时保留申请记录与防重复哈希",
+                  "首页新增醒目的邀请奖励滚动提示，并补充抖音号 31741476172 与 QQ 3969078416 的联系入口"
               ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.3.8-windows-x64.exe",
-    "sha256":  "7ea7e9f580bbbd8c48600371ec7e38612d13ac82a7fd741c2129c5bb413484f1",
-    "size":  6264832
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.4.3-windows-x64.exe",
+    "sha256":  "a500c36332f32c1e96647cf463e56139461441e3042d6535b1639f33a515263a",
+    "size":  7311360
 }
