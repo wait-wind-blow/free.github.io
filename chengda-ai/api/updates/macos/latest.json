@@ -1,17 +1,14 @@
 {
-  "version": "0.4.6",
-  "publishedAt": "2026-08-25T19:46:15+08:00",
+  "version": "0.4.7",
+  "publishedAt": "2026-08-26T00:41:30+08:00",
   "notes": [
-    "新增 macOS 通用版，Apple 芯片与 Intel Mac 均可使用同一个 DMG 安装包",
-    "新增应用自有窗口兼容隐私保护，减少支持的截图和录屏路径意外包含练习悬浮窗",
-    "Mac 截图查题会在捕获瞬间自动避开本应用窗口，题目画面更干净",
-    "截图查题悬停缩短为 1.2 秒，隐藏、重置、监听和退出仍保留 1.5 秒防误触",
-    "首次打开新增四步使用引导，也可从左侧随时重新查看",
-    "API 服务与常用模型仍可自由选择，密钥保存在 macOS 钥匙串中",
-    "资料库支持 DOCX 等常用格式和简历样例，回答时会优先复用个人资料",
-    "限时激活可继续叠加，本机剩余时间显示和到期提醒更加清晰"
+    "视觉模型列表已按硅基流动当前可用目录更新，移除已弃用的 72B 等旧模型选项",
+    "新增 Kimi K2.6、Kimi K2.7-Code、Qwen3.5、Qwen3-VL、Qwen3-Omni 等常用视觉模型",
+    "启动时检测到新版本会显示与用户有关的更新内容，可选择稍后处理或打开新版下载页",
+    "旧配置若保存了已弃用的视觉模型，会自动切换到当前可用的默认模型",
+    "继续提供兼容 Apple 芯片与 Intel Mac 的通用 DMG 安装包"
   ],
-  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.4.6-macos-universal.dmg",
-  "sha256": "dd6aaace6b868003f37c08fa04642cdfc7aa70719007160ec51ba6b4d7d1e717",
-  "size": 13484076
+  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.4.7-macos-universal.dmg",
+  "sha256": "b69a20642d3ed910a46e3a92d154a09f1e4c8eee19bed562fabb9b1901aad468",
+  "size": 13487442
 }
