@@ -1,13 +1,13 @@
 {
-  "version": "0.4.5",
-  "publishedAt": "2026-08-25T17:56:27.2816084+08:00",
-  "notes": [
-    "推广活动页面按数据卡片、材料提交和分享指引重新设计，并保留真实审核与三天奖励流程",
-    "笔试截图查题悬停时间由 1.5 秒缩短为 1.2 秒，隐藏、重置和退出仍保持 1.5 秒防误触",
-    "Windows 应用自有窗口防捕获默认开启，并在窗口聚焦、移动或缩放后自动重新应用和校验",
-    "新增首次启动四步引导，以及 macOS 通用安装包下载通道"
-  ],
-  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.4.5-windows-x64.exe",
-  "sha256": "1117f38843a1305559bd5194fe6022c863211d86d5edea9728b9145a0afdcacc",
-  "size": 7401472
+    "version":  "0.4.7",
+    "publishedAt":  "2026-08-26T00:22:39.3996144+08:00",
+    "notes":  [
+                  "视觉模型列表已按硅基流动当前可用目录更新，移除已弃用的 72B 等旧模型选项",
+                  "新增 Kimi K2.6、Kimi K2.7-Code、Qwen3.5、Qwen3-VL、Qwen3-Omni 等常用视觉模型",
+                  "启动时检测到新版本会显示与用户有关的更新内容，可选择暂不更新或下载更新",
+                  "旧配置若保存了已弃用的视觉模型，会自动切换到当前可用的默认模型"
+              ],
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.4.7-windows-x64.exe",
+    "sha256":  "e79f42a90227bba76a45a20898b30fbcc9b43867a4f5c292da46411fd01fb860",
+    "size":  7403520
 }
