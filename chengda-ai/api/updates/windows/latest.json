@@ -1,13 +1,15 @@
 {
-    "version":  "0.4.7",
-    "publishedAt":  "2026-08-26T00:22:39.3996144+08:00",
+    "version":  "0.5.1",
+    "publishedAt":  "2026-08-27T00:00:47.7319967+08:00",
     "notes":  [
-                  "视觉模型列表已按硅基流动当前可用目录更新，移除已弃用的 72B 等旧模型选项",
-                  "新增 Kimi K2.6、Kimi K2.7-Code、Qwen3.5、Qwen3-VL、Qwen3-Omni 等常用视觉模型",
-                  "启动时检测到新版本会显示与用户有关的更新内容，可选择暂不更新或下载更新",
-                  "旧配置若保存了已弃用的视觉模型，会自动切换到当前可用的默认模型"
+                  "查题、隐藏、暂停监听和重置均升级为全局快捷键，练习窗口未获得焦点时也能使用",
+                  "手机笔试与手机面试已合并到工作台，启动后可在系统托盘后台运行并将答案同步到手机",
+                  "AI 网络发送失败、超时、429 与部分服务异常会自动有限重试，并显示更明确的中文原因",
+                  "笔试回答增加最终答案硬约束，减少分析、复述、空行和无关内容",
+                  "面试问题与回答按会话持续保留，支持滚轮查看，并减少杂音与短语气词误触发",
+                  "新增在线操作手册，可在浏览器直接查看 API、模型、快捷键和练习流程"
               ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.4.7-windows-x64.exe",
-    "sha256":  "e79f42a90227bba76a45a20898b30fbcc9b43867a4f5c292da46411fd01fb860",
-    "size":  7403520
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.1-windows-x64.exe",
+    "sha256":  "c600b3948df8a4addc5abaae04a17a73d5a27f4f844d336f27f0d26cb9f4300a",
+    "size":  7533056
 }
