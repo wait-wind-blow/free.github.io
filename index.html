@@ -1,201 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>幸运大转盘</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            background-image: url(./wheel-bodybg.png);
-            background-size: 100% 100%;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .wheel {
-            width: 800px;
-            height: 800px;
-            position: relative;
-            background-image: url(./wheel-bg.png);
-            background-size: 100% 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .wheel-light {
-            background-image: url(./wheel-bg2.png) !important;
-        }
-
-        #wheelCanvas {
-            width: 700px;
-            height: 700px;
-
-        }
-
-        .transition {
-            transition: all 2s;
-        }
-
-        .pointer {
-            display: block;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background-color: transparent;
-            background-image: url(./wheel-pointer.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            border: none;
-            outline: none;
-        }
-
-        .pointer-animation {
-            animation: scale 1s infinite linear alternate;
-        }
-
-        @keyframes scale {
-            0% {
-                transform: scale(1);
-            }
-
-            100% {
-                transform: scale(1.1);
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>澄答 AI｜Windows 与 macOS 官方下载</title>
+  <meta name="description" content="澄答 AI（Chengda AI）官方下载入口，提供 Windows 安装包、单 EXE、macOS 通用 DMG、更新清单和中文操作手册。">
+  <meta name="keywords" content="澄答AI,澄答 AI,Chengda AI,AI笔试练习,AI面试练习,硅基流动,Windows AI,macOS AI">
+  <meta name="author" content="澄答 AI">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://wait-wind-blow.github.io/free.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="澄答 AI">
+  <meta property="og:title" content="澄答 AI 官方下载">
+  <meta property="og:description" content="Windows 与 macOS AI 笔试、面试练习助手官方下载入口。">
+  <meta property="og:url" content="https://wait-wind-blow.github.io/free.github.io/">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "澄答 AI",
+      "alternateName": "Chengda AI",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Windows, macOS",
+      "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/",
+      "description": "使用用户自有 API 的 AI 笔试与面试练习助手。"
+    }
+  </script>
+  <style>
+    :root{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#20344a;background:#edf4f7}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 16% 0,#dff4f7 0,transparent 36%),#edf4f7}.wrap{width:min(920px,calc(100% - 32px));margin:0 auto;padding:72px 0}.hero{padding:46px;border:1px solid #d5e2e9;border-top:5px solid #2b8eaa;background:rgba(255,255,255,.94);box-shadow:0 20px 52px rgba(40,70,91,.09)}.eyebrow{color:#26859e;font-size:12px;font-weight:800;letter-spacing:.16em}.hero h1{margin:14px 0 12px;font-size:42px}.hero p{max-width:680px;margin:0;color:#64788c;font-size:17px;line-height:1.85}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:9px;color:#fff;background:#2879c9;text-decoration:none;font-weight:750}.button.secondary{color:#315b70;background:#e8f3f6}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.card{padding:22px;border:1px solid #d5e2e9;background:rgba(255,255,255,.9)}.card strong{display:block;margin-bottom:8px}.card span{color:#718398;font-size:13px;line-height:1.65}.foot{margin-top:18px;color:#8392a1;font-size:12px;text-align:center}@media(max-width:720px){.wrap{padding:28px 0}.hero{padding:30px 24px}.hero h1{font-size:34px}.features{grid-template-columns:1fr}}
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="wheel">
-            <canvas id="wheelCanvas" width="600px" height="600px"></canvas>
-            <button class="pointer pointer-animation" id="getAward"></button>
-        </div>
-    </div>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">CHENGDA AI</span>
+      <h1>澄答 AI</h1>
+      <p>澄答 AI（Chengda AI）是使用用户自有 API 的 Windows 与 macOS AI 笔试、面试练习助手。这里提供官方版本下载、更新说明和中文操作手册。</p>
+      <div class="actions">
+        <a class="button" href="./chengda-ai/downloads/">进入官方下载页</a>
+        <a class="button secondary" href="https://github.com/wait-wind-blow/free.github.io">查看 GitHub 仓库</a>
+      </div>
+    </section>
+    <section class="features" aria-label="主要功能">
+      <article class="card"><strong>用户自有 API</strong><span>支持配置兼容 API、文本模型、视觉模型和语音识别模型。</span></article>
+      <article class="card"><strong>Windows 与 macOS</strong><span>提供 Windows 安装包、单 EXE 和 macOS 通用 DMG。</span></article>
+      <article class="card"><strong>中文操作手册</strong><span>包含硅基流动注册、API Key 创建、模型选择和软件设置流程。</span></article>
+    </section>
+    <p class="foot">澄答 AI · Chengda AI 官方下载入口</p>
+  </main>
 </body>
-<script>
-    //抽奖转盘
-    var turnWheel = {
-        reaward: [
-            { name: '1.绪论，串，数组', icon: 'https://mdhw.oss-cn-hangzhou.aliyuncs.com/signAward/1649132281714_4Y5c6zXd.png' },
-            { name: '2.线性表', icon: '' },
-            { name: '3.栈，队列', icon: 'https://mdhw.oss-cn-hangzhou.aliyuncs.com/signAward/1649132281714_4Y5c6zXd.png' },
-            { name: '4.查找', icon: '' },
-            { name: '5.排序', icon: 'https://mdhw.oss-cn-hangzhou.aliyuncs.com/signAward/1649132281714_4Y5c6zXd.png' },
-        ], //转盘奖品
-        colors: [], //转盘奖品区块对应背景颜色
-        fontColor: '#f00', //转盘奖品字体颜色
-        radius: 300, //转盘半径
-        textRadius: 320, //转盘奖品位置距离圆心的距离
-    };
-
-    var timer = null;
-    var turning = false;
-    var wheelCanvas = document.getElementById("wheelCanvas");
-
-    turnWheel.reaward = turnWheel.reaward.map(d => {
-        let img = new Image();
-        img.src = d.icon;
-        d.icon = img
-        return d
-    })
-    turnWheel.colors = [
-        "#eecffe",
-        "#FFFFFF",
-        "#eecffe",
-        "#FFFFFF",
-        "#eecffe",
-        "#FFFFFF",
-    ];
-    window.onload = function () {
-
-        drawWheelCanvas('wheelCanvas', turnWheel);
-        var getAward = document.getElementById("getAward");
-        var index = 0; // 中奖将品的数组下标
-        getAward.addEventListener("click", function () {
-            if (turning) {
-                return;
-            }
-            turning = true;
-            index = Math.floor(Math.random() * turnWheel.reaward.length);
-            wheelCanvas.classList.add("transition");
-            twinkle(() => {
-                alert('今天要复习：' + index);
-            });
-            rotateWheel(index, turnWheel.reaward.length)
-        })
-    };
-
-    // 转盘灯闪烁 callback为抽奖结果后执行函数
-    function twinkle(callback) {
-        let wheel = document.querySelector('.wheel');
-        let pointer = document.querySelector('.pointer');
-
-        pointer.classList.remove('pointer-animation');
-        timer = setInterval(() => {
-            wheel.classList.toggle('wheel-light');
-        }, 200);
-        setTimeout(() => {
-            turning = false;
-            wheelCanvas.classList.remove('transition');
-            wheel.classList.remove('wheel-light');
-            pointer.classList.add('pointer-animation');
-            wheelCanvas.style.transform = 'rotate(0deg)';
-            timer && clearInterval(timer);
-
-            typeof callback === 'function' && callback();
-
-        }, 2000);
-    }
-    // 旋转转盘 (index:中奖将品的数组下标)
-    function rotateWheel(awardIndex, awardCount) {
-        let baseAngle = 360 / awardCount;
-        let rotateRound = 360 * 5; // 每次旋转5圈
-        wheelCanvas.style.transform = 'rotate(' + ((270 - ((baseAngle / 2) + baseAngle * awardIndex)) + rotateRound) + 'deg)';
-    }
-    // 绘制转盘
-    function drawWheelCanvas(canvasId, turnWheel) {
-        let canvas = document.getElementById(canvasId);
-        let baseAngle = Math.PI * 2 / (turnWheel.reaward.length);
-        let ctx = canvas.getContext("2d");
-        let canvasW = canvas.width; // 画板的高度
-        let canvasH = canvas.height; // 画板的宽度
-        ctx.fillStyle = "#fff000";
-        ctx.clearRect(0, 0, canvasW, canvasH);//去掉背景默认的黑色
-        ctx.font = '26px Microsoft YaHei';
-        for (let index = 0; index < turnWheel.reaward.length; index++) {
-            let angle = index * baseAngle;
-            let rewardName = turnWheel.reaward[index].name;
-            let translateX = canvasW * 0.5 + Math.cos(angle + baseAngle / 2) * turnWheel.textRadius;
-            let translateY = canvasH * 0.5 + Math.sin(angle + baseAngle / 2) * turnWheel.textRadius;
-            ctx.fillStyle = turnWheel.colors[index];
-            ctx.beginPath();
-            ctx.arc(canvasW * 0.5, canvasH * 0.5, turnWheel.radius, angle, angle + baseAngle, false);
-            ctx.lineTo(canvasW * 0.5, canvasH * 0.5);
-            ctx.fill();
-            ctx.save();
-            ctx.fillStyle = turnWheel.fontColor;
-            ctx.translate(translateX, translateY);
-            ctx.rotate(angle + baseAngle / 2 + Math.PI / 2);
-            ctx.fillText(rewardName, -ctx.measureText(rewardName).width / 2, 100);
-            //添加对应图标
-            if (turnWheel.reaward[index] && turnWheel.reaward[index].icon) {
-
-                ctx.drawImage(turnWheel.reaward[index].icon, -40, 140, 80, 80);
-            }
-
-            ctx.restore(); //很关键
-        }
-    }
-</script>
-
 </html>
