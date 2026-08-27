@@ -1,13 +1,13 @@
 {
-    "version":  "0.5.2",
-    "publishedAt":  "2026-08-27T19:56:04.6421308+08:00",
+    "version":  "0.5.3",
+    "publishedAt":  "2026-08-27T20:29:12.9321085+08:00",
     "notes":  [
                   "长代码回答不再受软件内置输出长度限制，减少生成到一半被截断",
-                  "常用模型列表精简为快速、稳定的非 Thinking 模型，选择更直接",
-                  "代码答案会保留原有缩进，改善 Python 等依赖缩进语言的可用性",
-                  "在线操作手册已同步更新模型选择与长回答说明"
+                  "模型列表新增 Kimi K2.6、Kimi K2.7 Code、DeepSeek V4 Pro、GLM 5.2 与 MiniMax M2.5 等高质量选项",
+                  "截图模型新增 Kimi K2.6、Kimi K2.7 Code 与 GLM 4.5V，并标明速度、质量和使用建议",
+                  "在线手册新增 Edge 下载保留三步图解，并补全硅基流动注册、API Key 与软件配置流程"
               ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.2-windows-x64.exe",
-    "sha256":  "aab567916d30b29d702a39d4b7bf54c32445f152c35cf58b206d2218992c775b",
-    "size":  7540224
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.3-windows-x64.exe",
+    "sha256":  "a2712cc21648f6ad0579a865be5a41bb7af2c549b774b355717be08b3847a81f",
+    "size":  7990272
 }
