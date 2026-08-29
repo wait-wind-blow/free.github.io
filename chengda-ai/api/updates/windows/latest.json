@@ -1,13 +1,14 @@
 {
-    "version":  "0.5.3",
-    "publishedAt":  "2026-08-27T20:29:12.9321085+08:00",
+    "version":  "0.5.4",
+    "publishedAt":  "2026-08-29T10:53:51.9621476+08:00",
     "notes":  [
-                  "长代码回答不再受软件内置输出长度限制，减少生成到一半被截断",
-                  "模型列表新增 Kimi K2.6、Kimi K2.7 Code、DeepSeek V4 Pro、GLM 5.2 与 MiniMax M2.5 等高质量选项",
-                  "截图模型新增 Kimi K2.6、Kimi K2.7 Code 与 GLM 4.5V，并标明速度、质量和使用建议",
-                  "在线手册新增 Edge 下载保留三步图解，并补全硅基流动注册、API Key 与软件配置流程"
+                  "截图查题支持主、备用视觉模型并发竞速，单个模型临时故障时可采用另一条可用回答",
+                  "AI 回答最长等待时间延长到 5 分钟，并对网络、超时、429 与部分 5xx 错误有限重试",
+                  "截图查题新增实时耗时显示，完成或失败后保留本次用时",
+                  "Windows 自动更新新增下载进度，以及校验、准备替换和重启状态提示",
+                  "激活服务连接稳定性提升，降低服务波动导致无法兑换激活码的概率"
               ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.3-windows-x64.exe",
-    "sha256":  "a2712cc21648f6ad0579a865be5a41bb7af2c549b774b355717be08b3847a81f",
-    "size":  7990272
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.4-windows-x64.exe",
+    "sha256":  "082e9bf85146a087b3719c044d66ac5e437536121a51a023818b41ce73cf1c41",
+    "size":  7992320
 }
