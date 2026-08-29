@@ -5,7 +5,7 @@
 ## 官方入口
 
 - [澄答 AI 官方下载页](https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/)
-- [澄答 AI 官方主页](https://wait-wind-blow.github.io/free.github.io/)
+- [澄答 AI 官方主页](https://wait-wind-blow.github.io/free.github.io/chengda-ai/)
 - [Windows 更新清单](https://wait-wind-blow.github.io/free.github.io/chengda-ai/api/updates/windows/latest.json)
 - [macOS 更新清单](https://wait-wind-blow.github.io/free.github.io/chengda-ai/api/updates/macos/latest.json)
 
