@@ -1,12 +1,14 @@
 {
-    "version":  "0.5.5",
-    "publishedAt":  "2026-08-29T20:50:28.7686086+08:00",
+    "version":  "0.5.6",
+    "publishedAt":  "2026-08-30T11:22:21.0647173+08:00",
     "notes":  [
-                  "长回答改为分批刷新，减少文本越长界面越卡的情况",
-                  "重置会立即停止当前回答，旧请求结果不会在清空后重新出现",
-                  "截图识题默认改用速度更快的 Qwen3-VL 8B，并保留 32B 作为备用模型"
+                  "修复模拟测试偶发 HTTP 502，点击后直接打开官方 HTTPS 练习页",
+                  "API 配置测试增强 502、503 和 504 容错，旧默认文本模型会自动迁移到更稳定的 Qwen3 14B",
+                  "提升高分辨率屏幕的小字、公式、代码和复杂图表识别清晰度",
+                  "多显示器环境会自动截取当前题目所在的前台显示器",
+                  "快速模型暂时无法识别时会继续等待备用模型，不再过早结束搜题"
               ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.5-windows-x64.exe",
-    "sha256":  "4cc17844772b4348f5d973d950e5fe5d1ffd4e25610de0d3f3441d3940804b95",
-    "size":  7997440
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.6-windows-x64.exe",
+    "sha256":  "4440fa1acf90151f3c1ce0c04061ee139f843c74e21f8c7c0c76163e1b6d8e6e",
+    "size":  7999488
 }
