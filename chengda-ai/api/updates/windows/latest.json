@@ -1,14 +1,11 @@
 {
-    "version":  "0.5.6",
-    "publishedAt":  "2026-08-30T11:22:21.0647173+08:00",
+    "version":  "0.5.7",
+    "publishedAt":  "2026-09-03T11:45:56.0024149+08:00",
     "notes":  [
-                  "修复模拟测试偶发 HTTP 502，点击后直接打开官方 HTTPS 练习页",
-                  "API 配置测试增强 502、503 和 504 容错，旧默认文本模型会自动迁移到更稳定的 Qwen3 14B",
-                  "提升高分辨率屏幕的小字、公式、代码和复杂图表识别清晰度",
-                  "多显示器环境会自动截取当前题目所在的前台显示器",
-                  "快速模型暂时无法识别时会继续等待备用模型，不再过早结束搜题"
+                  "修复代码题答案换行后的缩进丢失，代码层级现在会正确保留",
+                  "练习悬浮窗文字缩放上限提高到 200%，大字号阅读更清晰"
               ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.6-windows-x64.exe",
-    "sha256":  "4440fa1acf90151f3c1ce0c04061ee139f843c74e21f8c7c0c76163e1b6d8e6e",
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.7-windows-x64.exe",
+    "sha256":  "ceaa6093a55cd7b956d5b7f9f538e87c78d0cb7b1d7448f6784824ead5eac07c",
     "size":  7999488
 }
