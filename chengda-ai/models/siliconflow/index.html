@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>硅基流动配置指南｜澄答 AI</title>
+  <meta name="description" content="澄答 AI 的硅基流动账号、API Key、模型选择、语音能力、计费和限流说明。">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="../provider-guide.css">
+</head>
+<body>
+  <header class="top"><a class="brand" href="../../home/index.html">澄答 AI</a><nav><a href="#account">账号与 Key</a><a href="#models">模型选择</a><a href="#billing">费用与限流</a><a href="../index.html">更换服务商</a></nav></header>
+  <main class="shell">
+    <header class="hero"><span class="eyebrow">SILICONFLOW SETUP</span><h1>硅基流动配置指南</h1><p>澄答 AI 继续支持原有硅基流动线路。已经配置好的 API Key 和模型可以继续使用，也可按硅基流动模型广场中的完整 ID 自行更换。</p><div class="hero-links"><a class="button primary" href="#account">开始配置</a><a class="button" href="../index.html">返回服务商选择</a><a class="button" href="../../manual/index.html">操作手册</a></div></header>
+    <section class="section" id="account"><h2>1. 注册账号并创建 API Key</h2><ol class="steps"><li>在<a href="https://cloud.siliconflow.cn/" target="_blank" rel="noopener">硅基流动控制台</a>注册或登录，按控制台要求完成账号验证。</li><li>打开<a href="https://cloud.siliconflow.cn/models" target="_blank" rel="noopener">模型广场</a>，确认准备使用的模型、价格、权限和速度限制。</li><li>进入<a href="https://cloud.siliconflow.cn/account/ak" target="_blank" rel="noopener">API 密钥</a>页面点击“新建 API 密钥”，复制并妥善保存。</li><li>在澄答 AI“API 设置”选择“硅基流动”，填写 Key，并从推荐项选择或手动粘贴完整模型 ID，保存后测试连接。</li></ol><div class="grid"><article class="card"><h3>Base URL</h3><span class="code">https://api.siliconflow.cn/v1</span></article><article class="card"><h3>密钥安全</h3><p>API Key 只填写在澄答 AI 中，不要上传到公开仓库。发现泄露时立即删除并重新创建。</p></article></div></section>
+    <section class="section" id="models"><h2>2. 模型自选与语音配置</h2><p class="lead">文本、截图和语音模型均可从软件推荐项选择，也可手动填写模型广场显示的完整模型 ID。</p><div class="table-wrap"><table><thead><tr><th>用途</th><th>软件预设</th><th>说明</th></tr></thead><tbody><tr><td>文本回答</td><td><span class="code">Qwen/Qwen3-14B</span></td><td>用于普通文本和语音转写后的直接回答，可替换为账号有权限的兼容对话模型。</td></tr><tr><td>截图识题</td><td><span class="code">Qwen/Qwen3-VL-8B-Instruct</span></td><td>需要选择支持图片输入的视觉语言模型。</td></tr><tr><td>语音识别</td><td><span class="code">FunAudioLLM/SenseVoiceSmall</span></td><td>通过 Audio Transcriptions 流程上传语音片段并返回转写文本。</td></tr></tbody></table></div><div class="note"><strong>关于语音热词</strong>当前澄答 AI 的手动热词表用于百炼实时语音线路；选择硅基流动时不会显示该设置。硅基流动语音模型的具体能力以模型广场和官方接口文档为准。</div></section>
+    <section class="section" id="billing"><h2>3. 费用、余额与限流</h2><p class="lead">免费模型、赠送金额、单价和限流可能随模型及活动变化，使用前以硅基流动控制台的实时信息为准。</p><div class="grid"><article class="card"><h3>余额与计费</h3><p>免费模型以模型广场的“免费”标记为准；付费模型按官方当期输入 / 输出 Token、语音时长或对应能力单位计费。</p></article><article class="card"><h3>调用与限流</h3><p>模型权限、余额、并发及速率限制由硅基流动控制台管理。遇到 429 或额度错误时，先检查余额、模型权限和当前限流。</p></article></div><div class="note"><strong>新用户赠送金额</strong>注册活动和赠送金额可能随时间与渠道变化，请以账号“余额 / 账单”和当期活动页实际显示为准。</div><p>官方入口：<a href="https://docs.siliconflow.cn/docs/userguide/quickstart" target="_blank" rel="noopener">快速开始</a> · <a href="https://siliconflow.cn/pricing" target="_blank" rel="noopener">模型价格</a> · <a href="https://docs.siliconflow.cn/docs/userguide/rate-limits/rate-limit-and-upgradation" target="_blank" rel="noopener">限流说明</a></p></section>
+    <footer class="footer">澄答 AI 硅基流动配置指南 · v0.5.10 · 更新日期 2026-09-04</footer>
+  </main>
+</body>
+</html>
