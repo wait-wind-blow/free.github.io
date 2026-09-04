@@ -1,6 +1,6 @@
 {
     "version":  "0.5.10",
-    "publishedAt":  "2026-09-04T10:59:57.3390542+08:00",
+    "publishedAt":  "2026-09-04T12:01:41.3331429+08:00",
     "notes":  [
                   "新增可手动维护的阿里百炼语音热词表，并支持预编译热词表 ID",
                   "阿里百炼与硅基流动均可自由填写模型 ID，并提供独立的模型与计费指南",
@@ -8,6 +8,6 @@
                   "完善不同语音模型的能力提示，避免把热词发送给不支持的模型"
               ],
     "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.10-windows-x64.exe",
-    "sha256":  "a23ab900a1e1b6f5b7c3a6d9bf8396604d3aa56bb5e1541d520b34969e0c50e1",
-    "size":  8143360
+    "sha256":  "bdc968257d442a8beea6d0841cad11b5d03f91ce908190a4614c037fcd74a64d",
+    "size":  8146432
 }
