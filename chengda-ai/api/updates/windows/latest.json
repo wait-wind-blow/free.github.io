@@ -1,11 +1,11 @@
 {
-    "version":  "0.5.11",
-    "publishedAt":  "2026-09-04T17:13:34.2358226+08:00",
+    "version":  "0.5.12",
+    "publishedAt":  "2026-09-06T15:07:21.1349044+08:00",
     "notes":  [
-                  "修复硅基流动部分模型因不支持思考参数而返回 400 的问题",
-                  "阿里百炼与硅基流动现可分别保存 API Key 和模型配置，切换时自动恢复"
+                  "面试问答只在问题与简历直接相关时引用对应资料，无关问题将自然作答",
+                  "阿里百炼语音默认使用 Qwen3 ASR Flash Realtime，填写热词时自动切换到兼容模型"
               ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.11-windows-x64.exe",
-    "sha256":  "19dc21c2ad88b3afe40a95d3df9acaf383ce5a2c14676729235c91a300600aef",
-    "size":  8151040
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.12-windows-x64.exe",
+    "sha256":  "2ca25b9a9926e9d54c9beb665737034679dac78d53210769b2bc3fd21e11bdc4",
+    "size":  8151552
 }
