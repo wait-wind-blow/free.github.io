@@ -18,7 +18,7 @@
       <a href="#quick">1. 下载与安装</a><a href="#onboarding">2. 首次打开</a><a href="#api">3. API 与模型</a><a href="#knowledge">4. 资料库</a><a href="#shortcuts">5. 外观与快捷键</a><a href="#exam">6. 笔试查题</a><a href="#interview">7. 面试问答</a><a href="#mobile">8. 手机模式</a><a href="#update">9. 激活与更新</a><a href="#errors">10. 常见问题</a><a href="../models/">模型/API 专题</a>
     </nav></aside>
     <main>
-      <header class="hero"><span class="eyebrow">STEP-BY-STEP VISUAL GUIDE</span><h1>澄答 AI 操作手册</h1><p>逐步图文版：照着红色数字的位置点击即可。每个关键操作都配有当前版本的实机截图，点击任意图片可以放大查看。</p><div class="hero-badges"><span>适用于 v0.5.12 及以上</span><span>共 10 章</span><span>手机也能看</span></div><div class="toc-mobile note"><strong>移动端阅读</strong>向下滚动查看各章节，点击图片可打开清晰原图。</div></header>
+      <header class="hero"><span class="eyebrow">STEP-BY-STEP VISUAL GUIDE</span><h1>澄答 AI 操作手册</h1><p>逐步图文版：照着红色数字的位置点击即可。每个关键操作都配有当前版本的实机截图，点击任意图片可以放大查看。</p><div class="hero-badges"><span>适用于 v0.5.13 及以上</span><span>共 10 章</span><span>手机也能看</span></div><div class="toc-mobile note"><strong>移动端阅读</strong>向下滚动查看各章节，点击图片可打开清晰原图。</div></header>
 
 <section id="quick">
   <h2>1. 下载与安装</h2>
@@ -124,7 +124,9 @@
 
       <section id="errors"><h2>10. 常见问题</h2><div class="table-wrap"><table><thead><tr><th>提示或现象</th><th>处理方法</th></tr></thead><tbody><tr><td>error sending request for url</td><td>检查网络、DNS、系统代理/VPN、防火墙和 Base URL；新版会对临时网络故障有限重试。</td></tr><tr><td>400 / enable_thinking</td><td>确认运行 v0.5.12 或更高版本。新版不会向不支持该参数的硅基流动模型发送 enable_thinking。</td></tr><tr><td>401 / 403</td><td>重新复制 API Key，并检查对应平台的账号权限、余额与服务商风控。</td></tr><tr><td>404 / model not found</td><td>完整复制模型 ID，并确认模型属于当前选择的服务商且账号可用。</td></tr><tr><td>500 / 50507</td><td>通常是模型服务临时过载。稍后重试，或在 API 设置中切换另一个可用模型。</td></tr><tr><td>无法识别题目</td><td>确保题目完整、清晰、未被遮挡并显示在主屏幕；避免截图过小或二次压缩。</td></tr><tr><td>语音断续或英文不准</td><td>减少回声与多人重叠；专业名词可启用支持热词的语音模型，并添加中英文热词。</td></tr></tbody></table></div><div class="note"><strong>隐私说明</strong>API Key 保存到系统凭据管理器；资料和练习记录保存在当前设备。调用模型时，截图、音频转写或问题文本会发送给用户自己配置的 API 服务商。</div></section>
 
-      <p class="foot">澄答 AI 在线操作手册 · 逐步图文版 · v0.5.12 · 更新日期 2026-09-07 · 帮助 QQ：3969078416</p>
+      <div class="note warning"><strong>防捕获版本要求</strong>完整防捕获要求 Windows 10 2004（Build 19041）或更高版本。低于该版本，或系统返回的实际保护模式不符合要求时，v0.5.13 会提示升级并自动关闭保护，避免录屏显示黑窗口。</div>
+
+      <p class="foot">澄答 AI 在线操作手册 · 逐步图文版 · v0.5.13 · 更新日期 2026-09-08 · 帮助 QQ：3969078416</p>
     </main>
   </div>
 </body>
