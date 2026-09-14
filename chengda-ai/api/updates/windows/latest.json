@@ -1,11 +1,12 @@
 {
-  "version": "0.5.13",
-  "publishedAt": "2026-09-08T19:59:08.5560359+08:00",
-  "notes": [
-    "防捕获会检查 Windows 版本和实际生效状态；低于 Windows 10 2004（Build 19041）时提示升级并自动关闭，避免录屏黑窗口",
-    "移除推广活动入口与工作台推广内容，界面更简洁"
-  ],
-  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.13-windows-x64.exe",
-  "sha256": "a8d43202a3df1830ac15b632d61e99cf57dd28bf2cfb1b54afc6abcb7d9697ae",
-  "size": 10813440
+    "version":  "0.5.14",
+    "publishedAt":  "2026-09-14T11:53:00.9130919+08:00",
+    "notes":  [
+                  "新增模型感知的低强度深度思考开关，不支持或只能思考的模型会自动兼容",
+                  "阿里百炼新增 Qwen3.8 Max、Flash、27B、2.4T A95B 和 Omni Flash 模型选项",
+                  "截图保持显示器原始分辨率并使用无损 PNG，改善小字、表格和图形识别"
+              ],
+    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.14-windows-x64.exe",
+    "sha256":  "dfe92e96edca3add0608c5d2643b4354c14fa3301bf852a5f26f49637eef6fee",
+    "size":  10151424
 }
