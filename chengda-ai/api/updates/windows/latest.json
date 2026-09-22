@@ -1,11 +1,11 @@
 {
-    "version":  "0.5.17",
-    "publishedAt":  "2026-09-17T23:48:33.4285898+08:00",
-    "notes":  [
-                  "新增长题连续截图模式，可通过悬停依次采集最多 8 张题目截图",
-                  "完成采集后按顺序一次性发送全部原始 PNG，由视觉模型综合作答"
-              ],
-    "url":  "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.17-windows-x64.exe",
-    "sha256":  "1068e6fda72e1cf8b95f7f6c164616850156578cf864fa8e343b91c7a3d116be",
-    "size":  10183168
+  "version": "0.5.18",
+  "publishedAt": "2026-09-22T16:52:37.8224000+08:00",
+  "notes": [
+    "悬浮操作按钮保持系统箭头光标，避免悬停时变成手形",
+    "面试练习新增笔试截屏，可在手撕代码等场景直接截图作答"
+  ],
+  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.18-windows-x64.exe",
+  "sha256": "230237062b1559e8dbfcf022d129be097b5d8b327b6d0751a3127e894643d369",
+  "size": 10183680
 }
