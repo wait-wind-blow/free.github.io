@@ -1,11 +1,11 @@
 {
-  "version": "0.5.19",
-  "publishedAt": "2026-10-11T14:22:04.1540333+08:00",
+  "version": "0.5.20",
+  "publishedAt": "2026-10-13T23:01:38.9418841+08:00",
   "notes": [
-    "练习记录支持点击查看详情，完整展示题目、回答和练习时间",
-    "长回答可滚动阅读和复制，代码换行与缩进完整保留"
+    "支持换机后恢复保存的剩余授权时间，并从重新激活时继续计时",
+    "联网时同步授权暂停与换绑状态，已确认停用的旧凭证不会因断网重新生效"
   ],
-  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.19-windows-x64.exe",
-  "sha256": "cb480e4f63cb2d918bb2a6c07c0343b8cd5987c5f77049821c79cfc506444061",
-  "size": 10347520
+  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.20-windows-x64.exe",
+  "sha256": "3c93f3413ddd21088573eb55734d568ffbf13ecad669e1078c9f6807cb72bca4",
+  "size": 10351104
 }
