@@ -110,11 +110,14 @@
 
       <section id="mobile">
         <h2>8. 手机笔试 / 手机面试</h2>
-        <p class="chapter-intro">手机与电脑需连接同一个、允许设备互访的私人 Wi-Fi。不要在公共网络分享临时地址。</p>
+        <p class="chapter-intro">手机与电脑需连接同一个、允许设备互访的可信 Wi-Fi 或电脑热点。v0.5.22 起，开启手机共享时会自动检查并配置局域网放行权限，不再需要点击修复；首次缺少权限时，请允许 Windows 管理员授权。不会关闭防火墙，无须手动修改公用/专用网络类型。不要在不可信网络开启共享。</p>
+        <div class="note"><strong>手机网页一直加载怎么办？</strong>保留地址开头的 http:// 和末尾的配对码。有多个网卡时，选择与手机同一网段的备用地址；切换网络后点击“刷新地址”。如果取消了 Windows 授权，可停止共享后重新开启，再允许授权。部分热点的设备隔离或组织安全策略仍可能阻止互访。</div>
+        <div class="note"><strong>手机已打开但没有查题反应？</strong>先点击电脑端“开始手机笔试”，再在电脑上按配置的查题键；仅开启共享不会自动开始练习。Windows 版按键不占用正常输入，例如设置为 2 时，按下后仍会在当前软件输入 2，同时触发查题。主键盘数字与开启 NumLock 的小键盘数字通用；长按只触发一次。系统安全桌面等受保护界面不支持普通应用监听。</div>
+        <div class="note"><strong>等待计时与自动滚动</strong>收到查题请求后，手机显示已等待秒数，完成后保留总耗时。可在开启练习前从电脑端设置手机答案的滚动速度，也可在手机端选择速度、暂停或继续。触摸答案会暂停自动滚动，方便阅读代码和长答案；新问题会从顶部开始。</div>
         <div class="guide-list">
-          <article class="guide-step"><div class="step-copy"><span class="step-no">1</span><h3>展开手机共享</h3><p>在工作台找到“手机笔试 / 手机面试”，点击展开。</p></div><figure class="step-media"><a href="assets/guide-mobile-share.png" target="_blank" rel="noopener"><img src="assets/guide-mobile-share.png" alt="手机共享设置区域"></a><span class="pin" style="--x:50%;--y:39%">1</span><figcaption>展开后的手机共享区域。</figcaption></figure></article>
-          <article class="guide-step"><div class="step-copy"><span class="step-no">2</span><h3>开启共享并在手机打开地址</h3><p>点击开启手机共享；电脑显示临时地址后，用手机浏览器打开它。</p></div><figure class="step-media"><a href="assets/guide-mobile-share.png" target="_blank" rel="noopener"><img src="assets/guide-mobile-share.png" alt="手机共享地址和开关"></a><span class="pin" style="--x:51%;--y:56%">2</span><figcaption>把页面显示的临时地址输入手机浏览器。</figcaption></figure></article>
-          <article class="guide-step"><div class="step-copy"><span class="step-no">3</span><h3>选择笔试或面试</h3><p>手机成功连接后，在电脑点击对应的开始按钮。主界面会正常隐藏到托盘，单击托盘图标即可恢复。</p></div><figure class="step-media"><a href="assets/guide-mobile-share.png" target="_blank" rel="noopener"><img src="assets/guide-mobile-share.png" alt="开始手机笔试和手机面试按钮"></a><span class="pin" style="--x:52%;--y:72%">3</span><figcaption>选择“开始手机笔试”或“开始手机面试”。</figcaption></figure></article>
+          <article class="guide-step"><div class="step-copy"><span class="step-no">1</span><h3>展开手机共享</h3><p>在工作台找到“手机笔试 / 手机面试”，点击展开。</p></div><figure class="step-media"><a href="assets/guide-mobile-share-v0.5.22.png" target="_blank" rel="noopener"><img src="assets/guide-mobile-share-v0.5.22.png" alt="手机共享设置区域"></a><span class="pin" style="--x:50%;--y:39%">1</span><figcaption>展开后的手机共享区域。</figcaption></figure></article>
+          <article class="guide-step"><div class="step-copy"><span class="step-no">2</span><h3>开启共享并在手机打开地址</h3><p>点击开启手机共享；电脑显示临时地址后，用手机浏览器打开它。</p></div><figure class="step-media"><a href="assets/guide-mobile-share-v0.5.22.png" target="_blank" rel="noopener"><img src="assets/guide-mobile-share-v0.5.22.png" alt="手机共享地址和开关"></a><span class="pin" style="--x:51%;--y:56%">2</span><figcaption>把页面显示的临时地址输入手机浏览器。</figcaption></figure></article>
+          <article class="guide-step"><div class="step-copy"><span class="step-no">3</span><h3>选择笔试或面试</h3><p>手机成功连接后，在电脑点击对应的开始按钮。主界面会正常隐藏到托盘，单击托盘图标即可恢复。</p></div><figure class="step-media"><a href="assets/guide-mobile-share-v0.5.22.png" target="_blank" rel="noopener"><img src="assets/guide-mobile-share-v0.5.22.png" alt="开始手机笔试和手机面试按钮"></a><span class="pin" style="--x:52%;--y:72%">3</span><figcaption>选择“开始手机笔试”或“开始手机面试”。</figcaption></figure></article>
         </div>
       </section>
 
@@ -134,7 +137,7 @@
 
       <div class="note warning"><strong>防捕获版本要求</strong>完整防捕获要求 Windows 10 2004（Build 19041）或更高版本。低于该版本，或系统返回的实际保护模式不符合要求时，v0.5.13 会提示升级并自动关闭保护，避免录屏显示黑窗口。</div>
 
-      <p class="foot">澄答 AI 在线操作手册 · 逐步图文版 · v0.5.20 · 更新日期 2026-10-13 · 帮助 QQ：3969078416</p>
+      <p class="foot">澄答 AI 在线操作手册 · 逐步图文版 · v0.5.22 · 更新日期 2026-10-14 · 帮助 QQ：3969078416</p>
     </main>
   </div>
 </body>

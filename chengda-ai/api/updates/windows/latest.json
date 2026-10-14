@@ -1,11 +1,12 @@
 {
-  "version": "0.5.20",
-  "publishedAt": "2026-10-13T23:01:38.9418841+08:00",
+  "version": "0.5.22",
+  "publishedAt": "2026-10-14T20:17:13.6058318+08:00",
   "notes": [
-    "支持换机后恢复保存的剩余授权时间，并从重新激活时继续计时",
-    "联网时同步授权暂停与换绑状态，已确认停用的旧凭证不会因断网重新生效"
+    "Windows 练习快捷键不再占用正常输入，数字键同时兼容主键盘和小键盘",
+    "手机答案显示等待耗时，支持提前设置自动滚动速度及触摸暂停",
+    "开启手机共享时自动配置局域网连接，缺少权限时提示 Windows 授权"
   ],
-  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.20-windows-x64.exe",
-  "sha256": "3c93f3413ddd21088573eb55734d568ffbf13ecad669e1078c9f6807cb72bca4",
-  "size": 10351104
+  "url": "https://wait-wind-blow.github.io/free.github.io/chengda-ai/downloads/chengda-ai-0.5.22-windows-x64.exe",
+  "sha256": "73808c871d94f3e2deb08f4a75490e4669a8089022c211f04e93558a2ece9a71",
+  "size": 10646528
 }
